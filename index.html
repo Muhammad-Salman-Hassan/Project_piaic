@@ -20,29 +20,76 @@
     />
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="container primary_nav">
-        <div class="logo_wrapper">
-          <img src="./asset/images/logo.png" alt="" />
-        </div>
-        <div class="search_wrapper">
-          <div class="input_wrapper">
-            <input type="text" placeholder="Search Any thing" />
-            <div class="icon_wrapper">
-              <i class="fa-solid fa-magnifying-glass"></i>
+    <div class="container-fluid gx-0">
+      <div class="container-fluid border-bottom">
+        <div class="container primary_nav">
+          <div class="logo_wrapper">
+            <img src="./asset/images/logo.png" alt="" />
+          </div>
+          <div class="search_wrapper">
+            <div class="input_wrapper">
+              <input
+                type="text"
+                placeholder="Search For Products, Brands & Categories"
+              />
+              <div class="icon_wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="nav_icoms_wrapper">
-          <div class="icons_wrapper_nav">
-            <a href="#"> <div class="img_wrapper"><span class="items">1</span><img src="./asset/images/heart.png" alt="" /></div> </a>
-            <a href="#"> <div class="img_wrapper"><img src="./asset/images/profile.png" alt="" /></div> </a>
-            <a href="#"> <div class="img_wrapper"><span class="items">1</span><img src="./asset/images/cart.png" alt="" /></div> </a>
+          <div class="nav_icoms_wrapper">
+            <div class="icons_wrapper_nav">
+              <a href="#">
+                <div class="img_wrapper">
+                  <span class="items">1</span
+                  ><img src="./asset/images/heart.png" alt="" />
+                </div>
+              </a>
+              <a href="#">
+                <div class="img_wrapper">
+                  <img src="./asset/images/profile.png" alt="" />
+                </div>
+              </a>
+              <a href="#">
+                <div class="img_wrapper">
+                  <span class="items">1</span
+                  ><img src="./asset/images/cart.png" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="burger_wrapper">
+            <i class="fa-solid fa-bars"></i>
           </div>
         </div>
+      </div>
 
-        <div class="burger_wrapper">
-          <i class="fa-solid fa-bars"></i>
+      <div class="container pt-1">
+        <div class="category_wrapper px-4">
+          <div class="select">
+            <div class="select_img_wrapper" id="my">
+              <img src="./asset/images/path.png" alt="" />
+            </div>
+            <div class="select_wrapper">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>All Categories</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="categories">
+            <ul>
+              <li class="active">Home</li>
+              <li>New Arrivals</li>
+              <li >Trending</li>
+              <li>Deals For You</li>
+              <li>Discounts</li>
+              <li>Weekly Offers</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -51,5 +98,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./asset/js/index.js"></script>
   </body>
 </html>
