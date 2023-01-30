@@ -1,14 +1,12 @@
 let lis = document.querySelectorAll(".categories>ul>li");
+const buger = document.querySelector(".burger")
+const sidebar=document.querySelector(".sidebar")
+const closes=document.querySelector(".sidebar>.close_icon>i")
+const bodyoverlay=document.querySelector(".bodyoverlay")
+console.log(bodyoverlay)
 
-// console.log(lis[1].innerHTML)
-console.log(lis);
-// [li, li, li, li, li, li] 6
 
-// for (let index = 0; index < lis.length; index++) {
-//     console.log(lis[index].innerHTML)
-// }
 
-//foreach map,find,reduce,filter
 
 lis.forEach((item) => {
   // console.log(item.innerHTML)
@@ -21,3 +19,14 @@ lis.forEach((item) => {
     item.classList.add("active");
   });
 });
+
+closes.addEventListener("click",()=>{
+  sidebar.classList.remove("togglesidebar")
+  sidebar.style.transition="all ease 0.9s"
+  bodyoverlay.classList.remove("overlay1")
+  bodyoverlay.style.transition="all ease 0.9s"
+})
+buger.addEventListener("click",()=>{
+  sidebar.classList.add("togglesidebar")
+  bodyoverlay.classList.add("overlay1")
+})

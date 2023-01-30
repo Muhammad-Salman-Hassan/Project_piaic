@@ -20,6 +20,12 @@
     />
   </head>
   <body>
+    <div class="sidebar">
+      <div class="close_icon  d-flex justify-content-end">
+        <i class="fa-solid fa-xmark px-5 py-4"></i>
+      </div>
+    </div>
+    <div class="bodyoverlay"></div>
     <div class="container-fluid gx-0">
       <div class="container-fluid border-bottom">
         <div class="container primary_nav">
@@ -60,35 +66,67 @@
           </div>
 
           <div class="burger_wrapper">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars burger"></i>
           </div>
         </div>
       </div>
 
-      <div class="container pt-1">
-        <div class="category_wrapper px-4">
-          <div class="select">
-            <div class="select_img_wrapper" id="my">
-              <img src="./asset/images/path.png" alt="" />
-            </div>
-            <div class="select_wrapper">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>All Categories</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+      <div class="container-fluid banner bg-danger gx-0">
+        <div class="overlay"></div>
+        <div class="mobimg">
+          <img src="./asset/images/mob.png" alt="" />
+        </div>
+        <div class="container-fluid z-1 bg-white gx-0">
+          <div class="container pt-1">
+            <div class="category_wrapper px-4"> 
+              <div class="select">
+                <div class="select_img_wrapper" id="my">
+                  <img src="./asset/images/path.png" alt="" />
+                </div>
+                <div class="select_wrapper">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>All Categories</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="categories">
+                <ul>
+                  <li class="active">Home</li>
+                  <li>New Arrivals</li>
+                  <li>Trending</li>
+                  <li>Deals For You</li>
+                  <li>Discounts</li>
+                  <li>Weekly Offers</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="categories">
-            <ul>
-              <li class="active">Home</li>
-              <li>New Arrivals</li>
-              <li >Trending</li>
-              <li>Deals For You</li>
-              <li>Discounts</li>
-              <li>Weekly Offers</li>
-            </ul>
+        </div>
+
+        <div class="container h-100 d-flex flex-column justify-content-center">
+          <div class="banner_wrapper h-50 w-50">
+            <h1>GET THE NEW IPHONE 12 PRO</h1>
+            <p>
+              A transformative triple‑camera system that adds tons of capability
+              without complexity
+            </p>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 col-lg-6">
+                <button class="buynow mt-5">
+                  Buy Now
+                  <span><img src="./asset/images/buynow.png" alt="" /></span>
+                </button>
+              </div>
+              <div class="col-md-6 col-sm-12 col-lg-6">
+                <button class="trade mt-5">With $599 with trade-in</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
