@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,500;1,600&display=swap");
 
 html {
-  font-size: 70%; /*11.2 px */ 
-  
+  font-size: 70%; /* 11.2 px */
 }
-.overlay1{
+body {
+  background-color: #f8f8f8;
+}
+.overlay1 {
   background-color: rgba(0, 0, 0, 0.676);
   height: 100%;
   width: 100%;
@@ -12,7 +14,7 @@ html {
   top: 0;
   left: 0;
   z-index: 200;
-transition:all ease 0.9s;
+  transition: all ease 0.9s;
 }
 .primary_nav {
   display: flex;
@@ -114,7 +116,7 @@ transition:all ease 0.9s;
   display: none;
 }
 
-.burger{
+.burger {
   z-index: 201;
 }
 /* ////////////////////////////Categories//////////////////////////// */
@@ -241,8 +243,10 @@ transition:all ease 0.9s;
   width: 100%;
   height: 100%;
 }
-.banner_wrapper{
+.banner_wrapper {
   z-index: 50;
+  width: 50%;
+  height: 50%;
 }
 
 .banner_wrapper h1 {
@@ -281,7 +285,7 @@ transition:all ease 0.9s;
 .trade {
   width: 22.4rem;
   height: 5rem;
-  
+
   font-size: 1.6rem;
   color: white;
   /* z-index: 25; */
@@ -290,18 +294,18 @@ transition:all ease 0.9s;
   background: rgba(255, 255, 255, 0.137);
 
   font-family: "heebo";
-font-size: 1.6rem;
-font-weight: 500;
-line-height: 1.6rem;
-font-style: normal;
-text-align: center;
-/* letter-spacing: -22.22222137451172px; */
-color: #ffffff;
-border: none;
-outline: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  font-style: normal;
+  text-align: center;
+  /* letter-spacing: -22.22222137451172px; */
+  color: #ffffff;
+  border: none;
+  outline: none;
 }
 /* ==============================>>>>>>>>>>sidebar<<<<<<<<<<<<<<==================================== */
-.sidebar{
+.sidebar {
   width: 40vw;
   height: 100%;
   background-color: #f7f7f7;
@@ -310,22 +314,168 @@ outline: none;
   left: 0;
   z-index: 500;
   transform: translate(-50vw);
-  box-shadow: 4px 1px 11px -2px rgba(255,255,255,0.44);
-  -webkit-box-shadow: 4px 1px 11px -2px rgba(255,255,255,0.44);
-  -moz-box-shadow: 4px 1px 11px -2px rgba(255,255,255,0.44);
+  box-shadow: 4px 1px 11px -2px rgba(255, 255, 255, 0.44);
+  -webkit-box-shadow: 4px 1px 11px -2px rgba(255, 255, 255, 0.44);
+  -moz-box-shadow: 4px 1px 11px -2px rgba(255, 255, 255, 0.44);
 }
-.togglesidebar{
+.togglesidebar {
   transform: translate(0vw);
   -webkit-transition: all 1.2s 0s ease-in-out;
--moz-transition: all 1.2s 0s ease-in-out;
--o-transition: all 1.2s 0s ease-in-out;
-transition: all 1.2s 0s ease-in-out;
+  -moz-transition: all 1.2s 0s ease-in-out;
+  -o-transition: all 1.2s 0s ease-in-out;
+  transition: all 1.2s 0s ease-in-out;
 }
 
-
-.sidebar i{
+.sidebar i {
   font-size: 3rem;
 }
+
+/* ============================>>>>>>>>>>>>>>>recommended<<<<<<<<<<<<<<<<<< */
+.recommended {
+  /* background-color: ; */
+  background: linear-gradient(#f8f8f8 50%, white 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.recommended button {
+  width: 22.5rem;
+  height: 5.7rem;
+  margin-top: 40px;
+  margin-bottom: 4rem;
+  border-color: #707070;
+  background-color: transparent;
+  border-width: 0.1rem;
+  border-style: solid;
+}
+.recommended h5 {
+  font-family: "poppins";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  font-style: normal;
+  text-align: center;
+
+  color: #302f2f;
+}
+.recommended h1 {
+  font-family: "poppins";
+  font-size: 2.5rem;
+  /* font-size: 80px; */
+  font-weight: 400;
+  line-height: 5.6rem;
+  font-style: normal;
+  text-align: center;
+
+  color: #111111;
+}
+
+.product_wrapper {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #848484; */
+}
+.product_wrapper img {
+  width: 100%;
+  height: 80%;
+}
+.product_wrapper h6 {
+  font-family: "poppins";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  font-style: normal;
+  text-align: center;
+
+  color: #111111;
+}
+.product_wrapper span {
+  width: 5.6rem;
+  height: 3.1rem;
+
+  border-radius: 1.7rem;
+
+  background: rgba(255, 79, 4, 0.09);
+
+  font-family: "poppins";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ff4f04;
+  margin-bottom: 10px;
+}
+/* ====================================>>>>Offers section========================== */
+.offers {
+  background: url(/asset/images/pbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25.1rem;
+  width: 100%;
+  position: relative;
+}
+.overlayoffers {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.57);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.offer_heading {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  width: 70%;
+}
+.offer_heading h1 {
+  font-family: "poppins";
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 5.6rem;
+  font-style: normal;
+  /* text-align: left; */
+
+  color: #ffffff;
+}
+.shop {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  /* background-color: #ff4f04; */
+}
+.shop button {
+  width: 22.5rem;
+  height: 5.7rem;
+  background-color: transparent;
+  border-color: #ffffff;
+  border-width: 0.1rem;
+  border-style: solid;
+
+  font-family: "poppins";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  font-style: normal;
+  text-align: center;
+
+  color: #ffffff;
+}
+
 @media (max-width: 768px) {
   .search_wrapper {
     display: none;
@@ -351,6 +501,15 @@ transition: all 1.2s 0s ease-in-out;
     align-items: center;
     font-size: 2.5rem;
   }
+  .offer_heading {
+    width: 100%;
+  }
+  .offer_heading h1 {
+    text-align: center;
+  }
+  .shop {
+    width: 100%;
+  }
 }
 
 @media (max-width: 786px) {
@@ -362,5 +521,22 @@ transition: all 1.2s 0s ease-in-out;
 @media (max-width: 500px) {
   html {
     font-size: 35%;
+  }
+}
+
+@media (min-width: 786px) and (max-width: 1199px) {
+  .mobimg {
+    width: 38rem;
+    height: 61rem;
+    position: absolute;
+    right: 0;
+    top: 4.9rem;
+    /* background-color: #e81d1d; */
+  }
+  .banner_wrapper {
+    height: 55% !important;
+  }
+  .banner_wrapper h1 {
+    font-size: 4rem;
   }
 }
