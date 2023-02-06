@@ -476,6 +476,180 @@ body {
   color: #ffffff;
 }
 
+/* ========================>>>>>>>>New Collection<<<<<<<<<<<<<<<<<================= */
+.new_collection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.new_collection button{
+  width: 22.5rem;
+  height: 5.7rem;
+  margin-top: 40px;
+  margin-bottom: 4rem;
+  border-color: #707070;
+  background-color: transparent;
+  border-width: 0.1rem;
+  border-style: solid;
+}
+.new_collection > .container > h6 {
+  font-family: "poppins";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  font-style: normal;
+  text-align: center;
+
+  color: #302f2f;
+}
+.new_collection > .container > h1 {
+  font-family: "poppins";
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 5.6rem;
+  font-style: normal;
+  text-align: center;
+
+  color: #111111;
+}
+.new_collection_wrapper {
+  /* width: 25.5rem;
+  height: 31.3rem; */
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+/* .new_collection_wrapper img{
+  width: 100%;
+  height: 100%;
+} */
+.new_collection_wrapper_large {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 1rem;
+
+  background: #f5f5f6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.new_collection_wrapper_large img{
+  width: 100%;
+  height: 90%;
+}
+.pricing {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2rem;
+}
+.pricing_large {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+.sale {
+  width: 9.8rem;
+  height: 3.4rem;
+
+  border-radius: 1.7rem;
+
+  background: #111111;
+  font-family: "poppins";
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  text-align: center;
+
+  color: #ffffff;
+}
+.price {
+  width: 6.3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.7rem;
+
+  background: #ffffff;
+
+  font-family: "poppins";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  font-style: normal;
+  text-align: center;
+
+  color: #ff4f04;
+}
+.new_collection_wrapper_large h2 {
+  font-family: "poppins";
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  font-style: normal;
+  text-align: left;
+
+  color: #111111;
+}
+.new_collection_wrapper_large h3 {
+  font-family: "poppins";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  font-style: normal;
+  text-align: left;
+
+  color: #7a7a7a;
+}
+.pricing h6 {
+  font-family: "poppins";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  font-style: normal;
+  text-align: center;
+
+  color: #111111;
+}
+
+.pricing span {
+  width: 6.3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.7rem;
+
+  background: #ffffff;
+
+  font-family: "poppins";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  font-style: normal;
+  text-align: center;
+
+  color: #ff4f04;
+}
+
 @media (max-width: 768px) {
   .search_wrapper {
     display: none;
